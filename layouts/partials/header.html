@@ -12,6 +12,9 @@
                     {{- . | safeHTML -}}
                 {{- end -}}
             </a>
+            {{ if not .IsHome }}
+            &nbsp;/&nbsp;<span>{{- .Title | safeHTML -}}</span>
+            {{ end }}
         </div>
     </div>
 
